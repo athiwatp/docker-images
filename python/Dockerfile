@@ -1,6 +1,5 @@
 FROM wellsie/centos7
 MAINTAINER Jono Wells <_oj.io>
-ENV CONTAINTER_VERSION 0.1
 
 # setup a reasonable Python environment with libevent support
 RUN yum -y install \
