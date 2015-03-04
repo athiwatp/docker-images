@@ -7,7 +7,11 @@ RUN yum install -y \
       libxslt-devel \
       openssl-devel ;\
     yum -y clean all ;\
-    pip install mitmproxy
+    pip install mitmproxy ;\
+    mkdir /mitmproxy
+
+VOLUME /mitmproxy
+WORKDIR /mitmproxy
 
 ENV LANG en_US.UTF-8
 
